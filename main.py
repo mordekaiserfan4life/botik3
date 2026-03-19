@@ -448,7 +448,7 @@ class SurvivorsGame:
                 for part in parts:
                     part_player = part.split('\n')
                     name = part_player[0].replace('Игрок:', '').strip()
-                    name = part_player[0].replace('игрок:', '').strip()
+                    name = name.replace('игрок:', '').strip()
                     story = part_player[1].replace('История:', '').strip()
                     story = story.replace('история:', '').strip()
                     survived = part_player[2].replace('Вердикт:', '').strip()
